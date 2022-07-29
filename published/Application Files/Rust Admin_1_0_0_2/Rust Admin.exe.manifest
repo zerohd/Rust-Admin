@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Rust Admin.exe" version="1.0.0.2" publicKeyToken="cba8c67ad0531c85" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Rust Admin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Rust Admin.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rust Admin.exe" size="8096">
+      <assemblyIdentity name="Rust Admin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PVrM1+XLeT91HL+m2dQCoAWow1ZgwqiRWEr/wmrycvo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Rust Admin.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ASUS\saeed" issuerKeyHash="bcf10b8c488b3a0aa407870233837f66e5ce5ed0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CEiRqIjxp7RuoPq0GaHLOsYC0UgdnO1/9XZ2D4zUPhg=</DigestValue></Reference></SignedInfo><SignatureValue>W56oZYVpJudmYjU40CJOJVB5zn3wWTIJHCN/P6sfiQ3FdPCDVmic7jQENXcGl2euRZw5xLhFYePvSNgVtnRJigOQxZfXSXuzGobhrUcdEp3/k49boBc9sbszyttObARAA9t6YeWVHARNhNrG3fveVgK0p9QqDul9UlysQFKBxM4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uzpYOjClftKZdjhHCCUvBFtfVia1G8DWKunWFWQVIqh/vc5uqG+ZMnWgVdf5/nKUMIZ4nAADO9Q3Phms9KDWM1zhzvPwhgnLLsacB7XWaoZFwuf4CsgR5HP67cnMNGgu4n75zGP4iGgL1D+9TlHWvPzu5QvmVEnyIxwNuZvuCT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="183ed48c0f7676f57fed9c1d48d102c63acba119b4faa06eb4a7f188a8914808" Description="" Url=""><as:assemblyIdentity name="Rust Admin.exe" version="1.0.0.2" publicKeyToken="cba8c67ad0531c85" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ASUS\saeed</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>stkIJl9MWC7G+tPYYxNuRZwIZM62d72pDDInRXNqV6w=</DigestValue></Reference></SignedInfo><SignatureValue>T7IuO5geWr1tLapKID5R96TxOzzgxnvagwfWlfzTC9XL0xT9QwRGGp5B4599vdlaK6dEYsVgugnduYIE4DUkTsBQ2u57WlNpja5li4N/UYgtJO58F6ICXLSbeZYuoXAYDpOH8faMezacAfWtGHQZgTymjIglUoCcqD7PyO3NVmo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uzpYOjClftKZdjhHCCUvBFtfVia1G8DWKunWFWQVIqh/vc5uqG+ZMnWgVdf5/nKUMIZ4nAADO9Q3Phms9KDWM1zhzvPwhgnLLsacB7XWaoZFwuf4CsgR5HP67cnMNGgu4n75zGP4iGgL1D+9TlHWvPzu5QvmVEnyIxwNuZvuCT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQcMh5iJypkrZD+FM3NIKIwzANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAQQBTAFUAUwBcAHMAYQBlAGUAZDAeFw0yMjA3MjkyMDI1MTlaFw0yMzA3MzAwMjI1MTlaMB8xHTAbBgNVBAMeFABBAFMAVQBTAFwAcwBhAGUAZQBkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7Olg6MKV+0pl2OEcIJS8EW19WJrUbwNYq6dYVZBUiqH+9zm6ob5kydaBV1/n+cpQwhnicAAM71Dc+Gaz0oNYzXOHO8/CGCcsuxpwHtdZqhkXC5/gKyBHkc/rtycw0aC7ifvnMY/iIaAvUP71OUda8/O7lC+ZUSfIjHA25m+4JPQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC5xtkB8i4tTduLEs/E3OIJ/h3CUDAWaXPrJJS29B2Wm5fHbCEiFFCsV0LOXJDYTkrM7T5mGnU4apgGnbfLA1ktpUXaVRaNu8BpDLacV6MUUXAVtzLp7gUhQlb78b2Yyp14SeNHQvrBC6tCwoWjfbzasz8+C/GCaOlwtZA9kb/7V</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
