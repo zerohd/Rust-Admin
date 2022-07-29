@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Rust Admin.exe" version="1.0.0.17" publicKeyToken="cba8c67ad0531c85" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icons8-registered-trademark-96.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Rust Admin" version="1.0.0.0" publicKeyToken="CBA8C67AD0531C85" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Rust Admin.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Rust Admin.exe" size="230304">
+      <assemblyIdentity name="Rust Admin" version="1.0.0.0" publicKeyToken="CBA8C67AD0531C85" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Rzw5QE897TqQgKtDWApUhOQg0THmBPbvb9As9su7nIw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Configuration.ConfigurationManager.dll" size="86120">
+      <assemblyIdentity name="System.Configuration.ConfigurationManager" version="6.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>85M5bLEvsJd+UPu/1aC6fii5f+k7aKkab8u/vSTOqLw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Security.AccessControl.dll" size="35952">
+      <assemblyIdentity name="System.Security.AccessControl" version="6.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/xTF9ii5pnmNFzrvu6CkPWHmb3FRCOJXasDT36uQcdA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Security.Permissions.dll" size="27752">
+      <assemblyIdentity name="System.Security.Permissions" version="6.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>I7kcfm6Eq5g8xuGN5NYKBhaaJu2oL8Aa4pfdAUIUoCM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Security.Principal.Windows.dll" size="18312">
+      <assemblyIdentity name="System.Security.Principal.Windows" version="5.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tNjhWtwjXQ6Fjjm1Ez5dAKS6qMlPTznjteeRsPnAyAY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="icons8-registered-trademark-96.ico" size="111486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Qq+vIrA+pev+c+JoNk+d8pqi8HH5vJ6cAcL3aau8f/o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Rust Admin.exe.config" size="305">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oE75MuZRveDwnzblDGUDQJxoELiq+tQxDKpCUa2GF3s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=ASUS\saeed" issuerKeyHash="bcf10b8c488b3a0aa407870233837f66e5ce5ed0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>d6Dd/M7EsDj8xPMqTnlTTO9Mf6PafxtIojwzKvCnT3A=</DigestValue></Reference></SignedInfo><SignatureValue>Z8NUGnwYiuddaMGZIRFML4nfCfTzZHkD3GV5AInJ9c6fqhJdOeRObFPCB5xEe/yxBZfAtVhfbYLgx2ZK/+aHXPiPyzqmoX6RfEigwNvOwAclKaiJS4BCILVBtoFUPJ8KBSxi3YyWirHNFXxw6IZvxmj7K8hdoyA0hH1i2sdxYF4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uzpYOjClftKZdjhHCCUvBFtfVia1G8DWKunWFWQVIqh/vc5uqG+ZMnWgVdf5/nKUMIZ4nAADO9Q3Phms9KDWM1zhzvPwhgnLLsacB7XWaoZFwuf4CsgR5HP67cnMNGgu4n75zGP4iGgL1D+9TlHWvPzu5QvmVEnyIxwNuZvuCT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="704fa7f02a333ca2481b7fdaa37f4cef4c53794e2af3c4fc38b0c4cefcdda077" Description="" Url=""><as:assemblyIdentity name="Rust Admin.exe" version="1.0.0.17" publicKeyToken="cba8c67ad0531c85" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ASUS\saeed</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xQMvYzy9b0FmnUBUzym2DgyF5tKpAaYDv/ytlkrssQw=</DigestValue></Reference></SignedInfo><SignatureValue>AedAw9U3z2jNeKz2MA//v7GfMIyjkovNx/slKD4SoW3zq2wbMQqnYvgRgCtX3YtVbAr99WKmc4e84qAZbYPD6bRMPrVNHESQq62LggqxDBS2wl6QvBwMVBR20B+4wDm1owBuz+iVgZZqljutMWK7CnlVkIW3CleJoBVdqN7oqS4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uzpYOjClftKZdjhHCCUvBFtfVia1G8DWKunWFWQVIqh/vc5uqG+ZMnWgVdf5/nKUMIZ4nAADO9Q3Phms9KDWM1zhzvPwhgnLLsacB7XWaoZFwuf4CsgR5HP67cnMNGgu4n75zGP4iGgL1D+9TlHWvPzu5QvmVEnyIxwNuZvuCT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQcMh5iJypkrZD+FM3NIKIwzANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAQQBTAFUAUwBcAHMAYQBlAGUAZDAeFw0yMjA3MjkyMDI1MTlaFw0yMzA3MzAwMjI1MTlaMB8xHTAbBgNVBAMeFABBAFMAVQBTAFwAcwBhAGUAZQBkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7Olg6MKV+0pl2OEcIJS8EW19WJrUbwNYq6dYVZBUiqH+9zm6ob5kydaBV1/n+cpQwhnicAAM71Dc+Gaz0oNYzXOHO8/CGCcsuxpwHtdZqhkXC5/gKyBHkc/rtycw0aC7ifvnMY/iIaAvUP71OUda8/O7lC+ZUSfIjHA25m+4JPQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC5xtkB8i4tTduLEs/E3OIJ/h3CUDAWaXPrJJS29B2Wm5fHbCEiFFCsV0LOXJDYTkrM7T5mGnU4apgGnbfLA1ktpUXaVRaNu8BpDLacV6MUUXAVtzLp7gUhQlb78b2Yyp14SeNHQvrBC6tCwoWjfbzasz8+C/GCaOlwtZA9kb/7V</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

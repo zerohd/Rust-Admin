@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Collections.Specialized;
+
 
 namespace Rust_Admin
 {
@@ -19,7 +22,7 @@ namespace Rust_Admin
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            loadup();
         }
 
 
@@ -35,9 +38,26 @@ namespace Rust_Admin
 
         public void ChooseFolder()
         {
+            
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = folderBrowserDialog1.SelectedPath;
+                
+                // Save path to setting : App.config
+                Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
+                config.AppSettings.Settings["ServerPath"].Value = textBox1.Text.ToString();
+                config.Save(ConfigurationSaveMode.Modified);
+                
+            }
+        }
+
+        public void loadup()
+        {
+            // Read path settings 
+            string sAttr = ConfigurationManager.AppSettings.Get("ServerPath");
+            if (sAttr != null)
+            {
+                textBox1.Text = sAttr;
             }
         }
 
@@ -47,7 +67,8 @@ namespace Rust_Admin
             {
                 checkBox1.Checked = true;
                 checkBox1.Enabled = false;
-            }else if (checkBox2.Checked == false) 
+            }
+            else if (checkBox2.Checked == false) 
             {
                 checkBox1.Enabled = true;
                 checkBox1.Checked = false;
