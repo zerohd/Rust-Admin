@@ -235,15 +235,6 @@ namespace Rust_Admin
             config.AppSettings.Settings["Max_Players"].Value = MaxPlayers.Text.ToString();
             config.Save(ConfigurationSaveMode.Modified);
         }
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void WorldSize_TextChanged(object sender, EventArgs e)
         {
@@ -289,10 +280,6 @@ namespace Rust_Admin
             config.Save(ConfigurationSaveMode.Modified);
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void imageurl_TextChanged(object sender, EventArgs e)
         {
@@ -308,6 +295,20 @@ namespace Rust_Admin
             Configuration config = ConfigurationManager.OpenExeConfiguration(Application.ExecutablePath);
             config.AppSettings.Settings["server_identity"].Value = serveridentity.Text.ToString();
             config.Save(ConfigurationSaveMode.Modified);
+        }
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

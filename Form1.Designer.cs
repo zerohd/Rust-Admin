@@ -65,6 +65,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.serveridentity = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -91,9 +92,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 13);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Locate Rust Server Folder:";
+            this.label1.Text = "Rust Server Folder:";
             // 
             // folderBrowserDialog1
             // 
@@ -177,6 +178,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button4);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.serveridentity);
             this.groupBox3.Controls.Add(this.imageurl);
@@ -264,7 +266,7 @@
             // ServerHostname2
             // 
             this.ServerHostname2.Location = new System.Drawing.Point(74, 23);
-            this.ServerHostname2.MaxLength = 6;
+            this.ServerHostname2.MaxLength = 999999999;
             this.ServerHostname2.Name = "ServerHostname2";
             this.ServerHostname2.Size = new System.Drawing.Size(184, 20);
             this.ServerHostname2.TabIndex = 10;
@@ -357,7 +359,7 @@
             // serverdescription
             // 
             this.serverdescription.Location = new System.Drawing.Point(74, 49);
-            this.serverdescription.MaxLength = 6;
+            this.serverdescription.MaxLength = 999999999;
             this.serverdescription.Name = "serverdescription";
             this.serverdescription.Size = new System.Drawing.Size(184, 20);
             this.serverdescription.TabIndex = 18;
@@ -375,7 +377,7 @@
             // imageurl
             // 
             this.imageurl.Location = new System.Drawing.Point(74, 75);
-            this.imageurl.MaxLength = 6;
+            this.imageurl.MaxLength = 999999999;
             this.imageurl.Name = "imageurl";
             this.imageurl.Size = new System.Drawing.Size(184, 20);
             this.imageurl.TabIndex = 20;
@@ -393,7 +395,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(3, 104);
+            this.label13.Location = new System.Drawing.Point(6, 104);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(45, 13);
             this.label13.TabIndex = 22;
@@ -402,11 +404,20 @@
             // serveridentity
             // 
             this.serveridentity.Location = new System.Drawing.Point(74, 101);
-            this.serveridentity.MaxLength = 6;
+            this.serveridentity.MaxLength = 999999999;
             this.serveridentity.Name = "serveridentity";
             this.serveridentity.Size = new System.Drawing.Size(184, 20);
             this.serveridentity.TabIndex = 21;
             this.serveridentity.TextChanged += new System.EventHandler(this.serveridentity_TextChanged);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(131, 210);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(127, 21);
+            this.button4.TabIndex = 23;
+            this.button4.Text = "View raw config";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -429,7 +440,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rust Admin";
+            this.Text = "Rust Admin : By Nurd";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -478,6 +489,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox serveridentity;
+        private System.Windows.Forms.Button button4;
     }
 }
 
